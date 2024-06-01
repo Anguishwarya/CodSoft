@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs Portal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+</head>
+
+<body>
+    <!--===== top nav ====-->
+   
+    <!--    ===== menu navbar ====-->
+    <section id="menu-navbar">
+        <div class="nav-bar">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="./Testing.html">Testing</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
+                                <ul class="dropdown-menu animated slideInLeft">
+                                    <li><a href="#">Career Guide</a></li>
+                                    <li><a href="#">Interview Tips</a></li>
+                                    <li><a href="#">Resume Tips</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">sign in</a></p>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-lg btlg-2" data-toggle="modal" data-target="#myModal"> create account</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </section>
+    <!--menu navbar end-->
+    <!--  ======>Sign In id<=====-->
+    <section class="sign-in-id">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" align="center"><img class="img-circle" id="img_logo" src="./images/logo.svg" alt="image">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+                                </div>
+                                <!--  radio Button -->
+                                <div class="choice-login-18jan">
+                                    <label>
+                                        <input type="radio" name="gender" value="female"> Job Holder
+                                        <input type="radio" name="gender" value="other">Candidate </label>
+                                </div>
+                                <div id="div-forms">
+                                    <form id="login-form">
+                                        <div class="modal-body">
+                                            <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"> Remember me </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                               <a href="cv.html"><button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Login</button></a>
+                                            </div>
+                                            <div>
+                                                <button id="login_lost_btn" type="button" class="btn btn-link">Forget Password?</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <form id="lost-form" style="display:none;">
+                                        <div class="modal-body">
+                                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required> </div>
+                                        <div class="modal-footer">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary btn-lg btn-block pr-button">Send</button>
+                                            </div>
+                                            <div>
+                                                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=======> create account option <=======-->
+    <section class="craeate-account-id">
+        <div class="container">
+            <div class="banner-inner text-center">
+                <div class="row">
+                    <!--  Craeate modal-->
+                    <div class="col-md-12">
+                        <div class="login-wrapper">
+                            <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content model-content-feb5">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Create Your Account</h4> </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-secret" aria-hidden="true"></i>
+                                                        <h3>Job Seeker</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="candidate-list.html">Create Account </a></h5> </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="jobseeker"> <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                                        <h3>Job Holder</h3>
+                                                        <p>Post/Manage resume and apply to right jobs in the easiest way</p>
+                                                        <h5 class="lead"><a href="client-post-list-home.html">Create Account </a></h5> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  =======Top search Background  ===========-->
+    <div class="top-bg">
+        <div class="container">
+            <div class="row">
+                <!-- job Search Part-->
+                <div class="info-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!--START KEYWORD-->
+                            <p class="list-key">Keyword</p>
+                            <form>
+                                <input type="text" class="input-control" placeholder="e.g Front End Developer"> </form>
+                        </div>
+                        <!-- END KEYWORD-->
+                        <!-- START CATEGORY-->
+                        <div class="col-md-4">
+                            <p class="list-key">Category</p>
+                            <div class="list3-24-18">
+                                <form>
+                                    <select class="selectpicker">
+                                        <optgroup label="Jobs">
+                                            <option>--select--</option>
+                                            <option>IT</option>
+                                            <option>Data Analyst</option>
+                                            <option>Data Scientist</option>
+                                            <option>Education</option>
+                                            <option>Medical</option>
+                                            <option>Bank</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END CATEGORY-->
+                        <!-- START POSITION-->
+                        <div class="col-md-4">
+                            <p class="list-key">Position</p>
+                            <div class="list3-24-18">
+                                <form>
+                                    <select class="selectpicker">
+                                        <optgroup label="Level">
+                                            <option>--select--</option>
+                                            <option>Any Level</option>
+                                            <option>Fresher</option>
+                                            <option>Experience</option>
+                                            <option>Junior</option>
+                                            <option>Senior</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END POSITION-->
+                        <!-- START LOCATION-->
+                        <div class="col-md-4">
+                            <p class="list-key">Location</p>
+                            <div class="list3-24-18">
+                                <form>
+                                    <select class="selectpicker">
+                                        <optgroup label="Area">
+                                            <option>--select--</option>
+                                            <option>Coimbatore</option>
+                                            <option>Chennai</option>
+                                            <option>Bangalore</option>
+                                            <option>Hyderabad</option>
+                                            <option>Delhi</option>
+                                            <option>Mumbai</option>
+                                            <option>Pune</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END LOCATION-->
+                        <!-- START JOB TYPE-->
+                        <div class="col-md-4">
+                            <p class="list-key">Job Type</p>
+                            <div class="list3-24-18">
+                                <form>
+                                    <select class="selectpicker">
+                                        <optgroup label="Type">
+                                            <option>Any Type</option>
+                                            <option>Full Tme</option>
+                                            <option>Part Time</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- END JOB TYPE-->
+                        <!-- START SEARCH-->
+                        <div class="col-md-4">
+                            <form>
+                                <a href="#">
+                                    <button type="button" class="search-button">Search</button>
+                                </a>
+                            </form>
+                        </div>
+                        <!-- END SEARCH-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== top Bg End =====-->
+    <!--=====>job-sector-list <====-->
+    <section id="wrapper">
+        <div class="job-sector-list">
+            <div class="container">
+                <div class="sector-header text-center">
+                    <h2><i class="fa fa-briefcase" aria-hidden="true"></i> Career Interests ?</h2> </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list accounted-1"> <a href="client-post-list-home.html">Web Development</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list hospitality-2"> <a href="client-post-list-home.html">UI/UX Designer</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list it-3"> <a href="client-post-list-home.html">Full Stack Development</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list production-4"> <a href="#"> Production/Operation</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list agro-5"> <a href="#"> Data Analyst</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list bank-6"> <a href="#"> Bank/ Non-Bank Finance</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list hospitality-7"> <a href="#"> Hospitality</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list commercial-8"> <a href="#"> Fashion Designer</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list research-9"> <a href="#"> Consultancy </a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list beauty-10"> <a href="#"> Health & Fitness</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list education-11"> <a href="#"> Education/Training </a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list construction-12"> <a href="#">Nurse</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list secretary-13"> <a href="#">Secretary</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list architects-14"> <a href="#">Architect</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="sector-name">
+                            <div class="sectors-list operator-15"> <a href="#">Data Entry</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-button text-center" > <a href="#" class="Read_more">See More</a> </div>
+            </div>
+        </div>
+    </section>
+    <!-- END JOB SECTOR LIST -->
+    <!-- =====================OUR_MOTO================-->
+    <section id="our-moto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo1-16_03"> <img src="./images/Image7.jpg" alt="">
+                        <h3>FREE FOREVER</h3>
+                        <p>The incredible job alerts you receive from FinderJobs.com are completely free and always will be! Over 50,000 satisfied job hunters are receiving perfectly tailored job alerts they couldn’t get anywhere else.They always happy to our Service.</p>
+                        <div class="box"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo1-16_03"> <img src="./images/Image6.jpg" alt="">
+                        <h3>DAILY JOB ALERTS</h3>
+                        <p>Every day we scour through every single available job posting available to find the best jobs that meet your requirements. And when we find them, we email the job postings directly to you so you can follow up on them and get hired..</p>
+                        <div class="box"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo1-16_03"> <img src="./images/image5.jpg" alt="">
+                        <h3>PERSONALIZED</h3>
+                        <p>We tailor job searches to your specific requirements. You no longer have to weed through hundreds of job postings, only to wind up missing the perfect job because you are overwhelmed with so many irrelevant postings, we do all the work for you.</p>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000
+                , easing: 'swing'
+                , step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
